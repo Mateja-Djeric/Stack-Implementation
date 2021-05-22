@@ -1,16 +1,20 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package Stack_list;
+package Stack_array;
 public class Stack {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Stack_array stek = new Stack_array(5);
+        stek.push(5);
+        stek.push(8);
+        stek.push(9);
+        stek.push(15);
+        stek.push(32);
+        stek.push(212);
+        System.out.println(stek.toString());
+        stek.pop();
+        stek.pop();
+        stek.pop();
+        stek.pop();
+        System.out.println(stek.toString());
     }
     
 }
