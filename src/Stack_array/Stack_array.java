@@ -33,4 +33,15 @@ public class Stack_array {
            return 0;
        }
    }
+
+    @Override
+    public String toString() {
+        StringBuilder ispisi = new StringBuilder();
+        for(int i=stack_size-1;i>=0;i--){
+            ispisi.append(stack[i]);
+            ispisi.append(", ");
+        }
+        return ispisi.toString();
+    }
+
 }
